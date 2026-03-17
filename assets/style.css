@@ -7,7 +7,7 @@
 /* adjusting fonts */
 
 body {
-	font-family: BlinkMacSystemFont, helvetica, arial, sans-serif;
+	font-family: "Times New Roman", Times, serif;
 	/*transition: background 500ms ease;*/
 	background-color: coral;
 }
