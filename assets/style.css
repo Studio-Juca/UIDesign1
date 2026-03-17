@@ -8,8 +8,9 @@
 
 body {
 	font-family: "Times New Roman", Times, serif;
-	/*transition: background 500ms ease;*/
-	background-color: coral;
+	transition: background 500ms ease;
+	color: #FFFDEF;
+	background-color: #550C18;
 }
 
 p, li {
@@ -17,14 +18,28 @@ p, li {
 	line-height: 30px;
 }
 
+/* active link */ 
+a:link { color: #F9C379; } /* The default state */
+a:visited { color: #B5D2B7; } /* A link the user has already clicked */
+a:hover { color: #6BA680; } /* When the mouse is over the link. */
+a:active { color: #6BA680; } /* The moment the link is being clicked */
+
 /* adjusting spacing */
 
 #left-column {
 	padding: 20px;
 }
 
+#middle-column {
+	padding: 50px;
+}
+
 h1, p {
 	margin-bottom:  20px;
+}
+
+h3, p {
+	margin-bottom:  10px;
 }
 
 ul, ol {
