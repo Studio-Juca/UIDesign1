@@ -1,3 +1,14 @@
+
+/* all elements in the page */
+
+
+/* you can use the "Developer tools" 
+	on the displayed website 
+	(chrome) to test css faster!
+	try it out!*/
+
+
+
 * {
 	margin:  0px;
 	padding:  0px;
@@ -18,7 +29,7 @@ p, li {
 	line-height: 30px;
 }
 
-/* active link */ 
+/* for links */ 
 a:link { color: #F9C379; } /* The default state */
 a:visited { color: #B5D2B7; } /* A link the user has already clicked */
 a:hover { color: #6BA680; } /* When the mouse is over the link. */
