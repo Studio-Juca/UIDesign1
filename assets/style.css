@@ -7,8 +7,6 @@
 	(chrome) to test css faster!
 	try it out!*/
 
-
-
 * {
 	margin:  0px;
 	padding:  0px;
@@ -17,7 +15,17 @@
 
 /* adjusting fonts */
 
-body {
+@font-face {
+  font-family: "Struggle";
+  src: url("Fonts/Struggle/struggle-regular.woff");
+}
+
+h1 {
+	font-family: "Struggle", Arial;
+	margin-bottom: 20px;
+}
+
+body, p1 {
 	font-family: "Times New Roman", Times, serif;
 	transition: background 500ms ease;
 	color: #FFFDEF;
@@ -25,7 +33,7 @@ body {
 }
 
 p, li {
-	font-size:  22px;
+	font-size: 22px;
 	line-height: 30px;
 }
 
@@ -43,10 +51,6 @@ a:active { color: #6BA680; } /* The moment the link is being clicked */
 
 #middle-column {
 	padding: 50px;
-}
-
-h1, p {
-	margin-bottom:  20px;
 }
 
 h3, p {
