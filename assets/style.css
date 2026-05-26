@@ -13,8 +13,62 @@
 	box-sizing: border-box;
 }
 
+body {
+	background-color: #FFFDEF;
+	color: #550C18;
+}
+
+/*Dark-mode*/
+body.dark {
+  background: #550C18;
+  color: #FFFDEF;
+}
+
+/* Buttons for social media links*/
+	/* 1. The horizontal layout and spacing */
+.button-container {
+    display: flex;       /* Aligns items side-by-side */
+    gap: 15px;          /* Gap between buttons */
+    margin-top: 20px;    /* Pushes the buttons down from content above */
+}
+
+	/* 2. Making the links look like buttons */
+.my-button1 {
+    display: inline-block;
+    background-color: #B5D2B7; 	/* Button colour */
+    font-family: "Struggle", Arial;
+	color: #550C18;           		/* Text color */
+	padding: 10px 20px;       		 /* 10px top/bottom, 20px left/right inside the button */
+    text-decoration: none;   		 /* Removes the default link underline */
+    border-radius: 5px;      		 /* Rounded corners */
+    transition: background 0.2s ease; /* Makes the hover effect smooth */
+}
+
+.my-button2 {
+    display: inline-block;
+    background-color: #B5D2B7; 	/* Button colour */
+    font-family: "Struggle", Arial;
+	color: #550C18;           		/* Text color */
+	padding: 10px 20px;       		 /* 10px top/bottom, 20px left/right inside the button */
+    text-decoration: none;   		 /* Removes the default link underline */
+    border-radius: 5px;      		 /* Rounded corners */
+    transition: background 0.2s ease; /* Makes the hover effect smooth */
+}
+
+	/* 3. Optional: Changes color when the user hovers over them */
+.my-button1:hover {
+    background-color: #6BA680; /* A slightly darker blue on hover */
+}
+
+.my-button2:hover {
+    background-color: #6BA680; /* A slightly darker blue on hover */
+}
+
+
+
 /* adjusting fonts */
 
+	/*h1 fancy font*/
 @font-face {
   font-family: "Struggle";
   src: url("Fonts/Struggle/struggle-regular.woff");
@@ -23,25 +77,55 @@
 h1 {
 	font-family: "Struggle", Arial;
 	margin-bottom: 20px;
+	font-size: 50px;
 }
 
-body, p1 {
+h2 {
+	font-family: "Struggle", Arial;
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+
+	/*paragraph 1 css*/
+p1 {
 	font-family: "Times New Roman", Times, serif;
 	transition: background 500ms ease;
-	color: #FFFDEF;
-	background-color: #550C18;
+	font-size: 20px;
 }
 
-p, li {
-	font-size: 22px;
+	/*paragraph 2 and list css*/
+p2, li {
+	font-size: 20px;
 	line-height: 30px;
 }
 
 /* for links */ 
-a:link { color: #F9C379; } /* The default state */
-a:visited { color: #B5D2B7; } /* A link the user has already clicked */
-a:hover { color: #6BA680; } /* When the mouse is over the link. */
-a:active { color: #6BA680; } /* The moment the link is being clicked */
+:link { font-size: 20px;}
+a:link { color: #550C18; } /* The default state */
+a:visited { color: #BB8942; } /* A link the user has already clicked */
+a:hover { color: #BB8942; } /* When the mouse is over the link. */
+a:active { color: #BB8942; } /* The moment the link is being clicked */
+
+
+/*image layout*/
+	/*top photo J&C*/
+.container {
+    overflow: auto; /* Keeps the floated image safely inside this box */
+}
+
+.wrapped-image {
+    /* This makes the image sit on the right and forces text to wrap around its left side */
+    float: right; 
+    
+    /* Crucial: Gives the text some breathing room so it doesn't press against the image */
+    margin-left: 20px; 
+    margin-bottom: 10px;
+    
+    /* Optional: Controls the size of the photo */
+    max-width: 300px; 
+    height: auto;
+}
+
 
 /* adjusting spacing */
 
@@ -53,22 +137,15 @@ a:active { color: #6BA680; } /* The moment the link is being clicked */
 	padding: 50px;
 }
 
-h3, p {
-	margin-bottom:  10px;
-}
-
 ul, ol {
 	margin-left: 20px;
+	font-size: 20px;
 }
 
-img {
-	max-width: 100%;
-	height:  auto;
-}
 
 /* uncomment the code below to set the grid */
 
-/*#grid {
+/* #grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
@@ -82,15 +159,15 @@ body {
 	overflow: scroll;
 	height: 100vh;
 }
-*/
 
-/*
+
+
 #left-column {
 	background: blue;
 }
-*/
 
-/*
+
 #right-column {
 	background: #333;
-}*/
+}
+*/
