@@ -71,7 +71,7 @@ body.dark {
 	/*h1 fancy font*/
 @font-face {
   font-family: "Struggle";
-  src: url("Fonts/Struggle/struggle-regular.woff");
+  src: url("assets/Fonts/Struggle/struggle-regular.woff");
 }
 
 h1 {
