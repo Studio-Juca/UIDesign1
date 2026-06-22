@@ -71,7 +71,7 @@ body.dark {
 	/*h1 fancy font*/
 @font-face {
   font-family: "Struggle";
-  src: url("assets/Fonts/Struggle/struggle-regular.woff");
+  src: url("Fonts/Struggle/struggle-regular.woff");
 }
 
 h1 {
@@ -188,4 +188,48 @@ ul, ol {
 	padding:  20px;
 	overflow: scroll;
 	height: 100vh;
+}
+*/
+
+/* Exercise buttons — uniform row */
+.exercise-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0 24px;
+}
+
+a.exercise-btn,
+a.exercise-btn:link,
+a.exercise-btn:visited,
+a.exercise-btn:active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 110px;
+  padding: 24px 16px;
+  background-color: #B5D2B7;
+  color: #550C18;
+  text-decoration: none;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Struggle", Arial;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+a.exercise-btn:hover {
+  background-color: #6BA680;
+  transform: translateY(-3px);
+  color: #550C18;
+}
+
+.exercise-week {
+  font-size: 14px;
+  opacity: 0.65;
+}
+
+.exercise-title {
+  font-size: 20px;
 }
